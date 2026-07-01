@@ -8,7 +8,6 @@ import socket
 import wmi
 def get_ps_value(command):
     try:
-        # Запускаем PowerShell без загрузки профиля (быстрее) и скрытно
         proc = subprocess.Popen(
             ["powershell", "-NoProfile", "-Command", command],
             stdout=subprocess.PIPE,
@@ -191,13 +190,7 @@ def collect_pure_python_data():
     }
 
 def main():
-    print("==================================================")
-    print("  DEVOPS AUTOMATED WORKPLACE INVENTORY SYSTEM     ")
-    print("==================================================")
-    print("[!] Скрипт запущен. Сбор данных через Modern PowerShell CIM...\n")
-    
     data = collect_pure_python_data()
-    
     print("\n==================================================")
     print("      ГОТОВЫЙ БЛАНК ИНВЕНТАРИЗАЦИИ РАБОЧЕГО МЕСТА   ")
     print("==================================================")
@@ -221,7 +214,6 @@ def main():
     print(f"ОС (Операционная система):     {data['os']}")
     print(f"Антивирус:                     {data['antivirus']}")
     print("==================================================")
-    print("[+] Скан завершен успешно. Скриншот готов для отчета.")
 
 if __name__ == "__main__":
     main()
