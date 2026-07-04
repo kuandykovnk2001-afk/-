@@ -1,6 +1,6 @@
 # Hardware Inventory Automation Script
 
-A Python script that automatically collects 19 hardware and software parameters from a Windows workstation in under 5 seconds and outputs them in a standardized inventory format — replacing manual, per-machine data collection.
+A Python script that automatically collects 19 hardware and software parameters from a Windows workstation in under 5 seconds and outputs them in a standardized inventory format replacing manual, per-machine data collection.
 
 ## Features
 
@@ -64,4 +64,4 @@ The script will print/export all 19 collected parameters in the standardized inv
 
 ## Author
 
-Developed as part of an internship project at JSC "National Information Technologies" (NIT), DevOps Infrastructure Department.
+Developed as part of an internship project 
