@@ -1,7 +1,7 @@
-#Hardware Inventory Automation Script
+# -Hardware Inventory Automation Script
 A Python script that automatically collects 19 hardware and software parameters from a Windows workstation in under 5 seconds and outputs them in a standardized inventory format — replacing manual, per-machine data collection.
 
-# -Features
+Features
 
 The script collects:
 
@@ -18,7 +18,7 @@ Windows activation status (via Win32_SoftwareLicensingProduct)
 Hostname, IP address, domain/workgroup, connection type (LAN/Wi-Fi)
 Installed antivirus product (via the SecurityCenter2 namespace)
 
-#Requirements
+Requirements
 
 Windows 10 / Windows 11
 Python 3.11+
@@ -27,7 +27,7 @@ pip install psutil wmi
 
 platform, socket, subprocess, and math are part of the Python standard library and require no installation.
 
-#How It Works
+How It Works
 
 
 Cross-platform data (RAM, disk, network interfaces, battery) is collected using psutil.
@@ -36,7 +36,7 @@ RAM/storage rounding uses 2^ceil(log2(actual_GB)) to normalize raw values to sta
 IP detection filters out virtual adapters (Docker, VirtualBox, VMware, WSL, loopback) to return only the real network-facing IP address.
 subprocess is used as a PowerShell-based fallback for data points not available through WMI.
 
-#Notes / Limitations
+Notes / Limitations
 
 The script was developed, tested, and validated on a personal machine only.
 Deployment on production/corporate workstations was not approved by the department due to internal IT policy on running intern-developed tools on company hardware — this repository is shared for demonstration and portfolio purposes.
