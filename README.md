@@ -41,3 +41,5 @@ subprocess is used as a PowerShell-based fallback for data points not available 
 The script was developed, tested, and validated on a personal machine only.
 Deployment on production/corporate workstations was not approved by the department due to internal IT policy on running intern-developed tools on company hardware — this repository is shared for demonstration and portfolio purposes.
 Requires the script to be run with sufficient permissions to query WMI (administrator rights recommended).
+
+Developed as part of an internship project
