@@ -30,23 +30,6 @@ pip install psutil wmi
 
 > `platform`, `socket`, `subprocess`, and `math` are part of the Python standard library and require no installation.
 
-## Installation
-
-```bash
-git clone https://github.com/kuandykovnk2001-afk/-.git
-cd <project-folder>
-pip install -r requirements.txt
-```
-
-## Usage
-
-Run the script directly on the target workstation:
-
-```bash
-python inventory.py
-```
-
-The script will print/export all 19 collected parameters in the standardized inventory format used by the department.
 
 ## How It Works
 
